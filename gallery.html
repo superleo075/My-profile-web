@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery | Leonard Kipkemoi Bett</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header>
+  <div class="logo-container">
+    <a href="index.html" class="logo-link">
+      <img src="images/Superlo logo.png" alt="SuperLeo Logo" class="logo" />
+    </a>
+    <img src="images/kenya flag1.png" alt="Kenyan Flag" class="flag-icon" />
+  </div>
+  <h1>Leonard Kipkemoi Bett</h1>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="results.html">Results</a></li>
+      <li><a href="gallery.html" class="active">Gallery</a></li>
+      <li><a href="highlights.html">Highlights</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="videos.html">Videos</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section>
+    <h2>Photo Gallery</h2>
+    <div class="gallery">
+      <img src="images/barier.jpg" alt="Barrier Jump" onclick="openLightbox(this)" />
+      <img src="images/Budapes.jpg" alt="Budapest Race" onclick="openLightbox(this)" />
+      <img src="images/diamond.jpg" alt="Diamond League" onclick="openLightbox(this)" />
+      <img src="images/L $ G.jpg" alt="Diamond League" onclick="openLightbox(this)" />
+      <img src="images/leo $ abu2.jpg" alt="Diamond League" onclick="openLightbox(this)" />
+      <img src="images/leo Abu.jpg" alt="Diamond League" onclick="openLightbox(this)" />
+      <img src="images/olympics.jpg" alt="Diamond League" onclick="openLightbox(this)" />
+      <img src="images/LEONARD bett.jpg" alt="LEONARD bett" onclick="openLightbox(this)" />
+      <img src="images/Jumping.jpg" alt="Jumping" onclick="openLightbox(this)" />
+      
+      <!-- More images -->
+    </div>
+  </section>
+</main>
+
+<!-- Lightbox container -->
+<div id="lightbox" onclick="closeLightbox()">
+  <img id="lightbox-img" src="" alt="Enlarged image" />
+</div>
+
+
+
+<footer>
+  <p>&copy; 2025 Created by (SuperLeo) Leonard Kipkemoi Bett. All rights reserved.</p>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="results.html">Results</a></li>
+      <li><a href="gallery.html" class="active">Gallery</a></li>
+      <li><a href="highlights.html">Highlights</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="videos.html">Videos</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</footer>
+
+
+<script>
+function openLightbox(img) {
+  document.getElementById('lightbox-img').src = img.src;
+  document.getElementById('lightbox').style.display = 'flex';
+}
+function closeLightbox() {
+  document.getElementById('lightbox').style.display = 'none';
+}
+</script>
+
+</body>
+</html>
